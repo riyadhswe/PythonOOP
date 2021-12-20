@@ -1,21 +1,11 @@
 class Student:
-    name = " "
-    roll = " "
-
-
-    def SetValue(self,name,roll):
-        self.name = name
+    def __init__(self, roll, gpa):
         self.roll = roll
+        self.gpa = gpa
+
+    def display(self):
+        print("This is %s", self.roll, " And ID is ", self.gpa)
 
 
-    def Display(self):
-        print("This is ",self.name," And ID is ",self.roll)
-
-
-rahim = Student()
-rahim.SetValue("Rahim",101)
-rahim.Display()
-
-Karim = Student()
-Karim.SetValue("Karim",102)
-Karim.Display()
+rahim = Student(101, 102)
+rahim.display()
